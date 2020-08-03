@@ -1,0 +1,70 @@
+:root {
+    --num-boxes: 16;
+    --bg-box: #ddd;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ab47bc;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    padding-top: 20px;
+}
+
+#pad {
+    width: 500px;
+    background-color: #790e8b;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border: 10px solid #ab47bc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#grid {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    border-top: 1px solid #790e8b;
+    border-left: 1px solid #790e8b;
+    border-right: none;
+    border-bottom: none;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(var(--num-boxes), 1fr);
+    grid-template-rows: repeat(var(--numb-boxes), 1fr);
+}
+
+.box {
+    border-top: none;
+    border-left: none;
+    border-right: 1px solid #790e8b;
+    border-bottom: 1px solid #790e8b;
+    background-color: var(--bg-box);
+}
+
+button {
+    border: none;
+    background-color: #df78ef;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    transition: 300ms;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
